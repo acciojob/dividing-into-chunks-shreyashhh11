@@ -9,18 +9,17 @@ const divide = (arr, n) => {
 	for(let num of arr){
 		if(currentsum+num <= n){
 			current.push(num);
-			currentsum += sun;
+			currentsum += num;
 		}else{
 			result.push(current);
 			current = [num]
 			currentsum = num 
-		}
-
-		if(current.length > 0){
+		}	
+	}
+	if(current.length > 0){
 			result.push(current)
 		}
-		return result;
-	}
+	return result;
 };
 
 const n = prompt("Enter n: ");
